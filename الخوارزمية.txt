@@ -1,0 +1,21 @@
+Algorithm: Warehouse Robot Operation
+
+Start
+Initialize all motors and sensors
+Move to Home position
+
+WHILE system is active DO
+    IF WMS has pending order THEN
+        Locate part on tilted shelf
+        Move X to shelf location
+        Lower Z axis
+        Close gripper
+        Raise Z axis
+        Move X to delivery area
+        Lower Z axis
+        Open gripper
+        Raise Z axis
+    ELSE
+        Wait for next order
+    ENDIF
+ENDWHILE
